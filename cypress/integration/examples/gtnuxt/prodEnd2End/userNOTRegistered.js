@@ -1,7 +1,7 @@
 describe('Not registered user end 2 end', function(){
     it('add delivery address before adding items', function(){
         cy.visit('https://www.getgoodtree.com/') // go to good tree
-        //cy.get('.show > .modal-dialog > .modal-content > form > .modal-footer > .btn').click() //click to "I am 21+"
+        cy.get('.show > .modal-dialog > .modal-content > form > .modal-footer > .btn').click() //click to "I am 21+"
         cy.get('.primary-nav > .nav-item > .nav-link').click()
         cy.url().should('include', '/products/flower')
         cy.wait(2000)
