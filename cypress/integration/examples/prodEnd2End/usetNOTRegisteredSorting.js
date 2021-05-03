@@ -7,7 +7,7 @@ describe('Not registered user end 2 end', function(){
         cy.get('.primary-nav > .nav-item > .nav-link').click() // go to products
         cy.wait(5000)
         cy.get('#__BVID__121').invoke('val', '43').trigger('change')
-        cy.get('.filters-container > :nth-child(2) > h5').should('have.text', ' Max price - $43')
+        cy.get('.filters-container > :nth-child(2) > h5').should('have.text', ' Max price - $41')
         cy.contains('19 products')
 
 
@@ -16,6 +16,3 @@ describe('Not registered user end 2 end', function(){
 
     })
 })
-
-
-
