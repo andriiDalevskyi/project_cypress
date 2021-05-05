@@ -13,5 +13,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          browser: chrome89
+          browser: chrome
           start: ./node_modules/.bin/cypress run --browser chrome
