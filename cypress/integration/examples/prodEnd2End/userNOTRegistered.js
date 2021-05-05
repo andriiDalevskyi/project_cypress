@@ -12,9 +12,10 @@ describe('Not registered user end 2 end', function(){
 
 
     it('redirect to sign up after adding adress and make purchase',function(){
+        //TODO setup placehodler parameter setup to '468 N Bedford Dr, Beverly Hills, CA 90210, USA'
         cy.get('#delivery').type('468 N Bedford Dr, Beverly Hills, CA 90210').click()
         cy.wait(3000)
-//         cy.get('#delivery').click
+        cy.get('#delivery').click
         cy.get('body > div.pac-container.pac-logo.hdpi > div:nth-child(1)').click({force: true})
         cy.wait(3000)
         cy.get('#jumbotron-content > .gt-btn').click()
