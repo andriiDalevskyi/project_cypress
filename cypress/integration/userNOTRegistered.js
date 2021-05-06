@@ -12,6 +12,7 @@ describe.only('Not registered user end 2 end', function(){
 
 
     it('redirect to sign up after adding adress and make purchase',function(){
+        cy.visit('https://www.getgoodtree.com/')
         cy.get('#delivery')
             .type("468 N Bedford Dr, Beverly Hills, CA 90210, USA", { delay: 10 })
         cy.get('[class=pac-item]').first().click()
