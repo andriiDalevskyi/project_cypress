@@ -15,3 +15,4 @@ build/Release
 
 .tmp
 *.orig
+.idea
