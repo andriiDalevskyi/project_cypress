@@ -40,9 +40,6 @@ describe.only('Not registered user end 2 end', function(){
         cy.get('.btn-close').click()
         cy.get('.primary-nav > .nav-item > .nav-link').click()
         cy.url().should('include', '/products/flower')
-        cy.wait(3000)
-        cy.get(':nth-child(2) > [style="position: absolute; bottom: 1px; left: 50%; z-index: 100;"] > .base-button > .svg-inline--fa > path').click()
-        cy.contains('Cart 2 items')
     })
 
 
