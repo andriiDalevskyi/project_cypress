@@ -1,4 +1,4 @@
-describe('Not registered user end 2 end', function(){
+describe.only('Not registered user end 2 end', function(){
     it('add delivery address before adding items', function(){
         cy.visit('https://www.getgoodtree.com/') // go to good tree
         cy.get('.show > .modal-dialog > .modal-content > form > .modal-footer > .btn').click() //click to "I am 21+"
@@ -12,12 +12,9 @@ describe('Not registered user end 2 end', function(){
 
 
     it('redirect to sign up after adding adress and make purchase',function(){
-        //TODO setup placehodler parameter setup to '468 N Bedford Dr, Beverly Hills, CA 90210, USA'
-        cy.get('#delivery').type('468 N Bedford Dr, Beverly Hills, CA 90210').click()
-        cy.wait(3000)
-        cy.get('#delivery').click
-        cy.get('body > div.pac-container.pac-logo.hdpi > div:nth-child(1)').click({force: true})
-        cy.wait(3000)
+        cy.get('#delivery')
+            .type("468 N Bedford Dr, Beverly Hills, CA 90210, USA", { delay: 100 })
+        cy.get('[class=pac-item]').first().click()
         cy.get('#jumbotron-content > .gt-btn').click()
         cy.wait(3000)
         cy.get(':nth-child(1) > [style="position: absolute; bottom: 1px; left: 50%; z-index: 100;"] > .base-button > .svg-inline--fa').click()
