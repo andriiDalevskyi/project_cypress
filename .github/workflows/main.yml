@@ -11,6 +11,9 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          headed: true
           
       - name: Reporting    
         uses: actions/upload-artifact@v2
