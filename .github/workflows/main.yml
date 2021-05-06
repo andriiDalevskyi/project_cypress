@@ -4,7 +4,9 @@ on: workflow_dispatch
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
+    name: Artifacts    
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -14,9 +16,11 @@ jobs:
         with:
           browser: chrome
           headed: true
+          spec: cypress/integration/userNOTRegistered.js
           
       - name: Reporting    
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v1
+        if: failure()
         with:
-          name: cypress-videos
-          path: cypress/videos
+          name: cypress-screenshots
+          path: cypress/screenshots
