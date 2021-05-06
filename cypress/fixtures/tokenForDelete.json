@@ -1,6 +1,0 @@
-{
-  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTQwODkyNDAsInN1YiI6IjdiNTMwNDk1LWMzYWUtNDQyNC05NWM3LTVlYzY4MzQxZDFiOCIsImVtYWlsIjoiZGVhbi5tZXRhbGhlYWRAZ21haWwuY29tIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwifSwidXNlcl9tZXRhZGF0YSI6eyJmaXJzdF9uYW1lIjoiVGVtcCIsImxhc3RfbmFtZSI6IisxOTQ5NTA2NTE3MyIsInBob25lIjoiKzE5NDk1MDY1MTczIn19.YwzPfC6qmbw29Ayy21I9x-sAWM_pBdajnDwFCps8AS4",
-  "token_type": "bearer",
-  "expires_in": 3600,
-  "refresh_token": "rQYrQF3XPOJH1IJMKOUusQ"
-}
