@@ -17,7 +17,7 @@ jobs:
           start: ./node_modules/.bin/cypress run  
           
       - name: Reporting    
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: cypress-videos
           path: cypress/videos
