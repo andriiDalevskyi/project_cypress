@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
-    container: node14.16.0-chrome89-ff86
+    container: cypress/browsers:node14.16.0-chrome89-ff86
     steps:
       - name: Checkout
         uses: actions/checkout@v2
