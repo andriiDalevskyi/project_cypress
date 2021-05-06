@@ -13,8 +13,6 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
-        with:
-          spec: cypress/integration/userNOTRegistered.js
           
       - name: Reporting screenshots    
         uses: actions/upload-artifact@v1
