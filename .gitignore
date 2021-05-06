@@ -1,3 +1,4 @@
+.idea
 node_modules/
 cypress/results/*
 cypress/reports/*
@@ -15,4 +16,3 @@ build/Release
 
 .tmp
 *.orig
-.idea
