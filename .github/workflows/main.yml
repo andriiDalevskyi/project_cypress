@@ -14,4 +14,10 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           browser: electron
-          start: ./node_modules/.bin/cypress run
+          start: ./node_modules/.bin/cypress run  
+          
+      - name: Reporting    
+        uses: actions/upload-artifact@v1
+        with:
+          name: cypress-videos
+          path: cypress/videos
